@@ -21,13 +21,12 @@ export const useTorchLight = () => {
               video: true,
             })
             .then(() => {
-              permissionState = "granted";
+              setPermissionState("granted");
             })
             .catch(() => {
-              permissionState = "denied";
+              setPermissionState("denied");
             });
         }
-        setPermissionState(permissionState);
       });
   }, []);
 
