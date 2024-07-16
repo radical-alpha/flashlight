@@ -23,7 +23,8 @@ export const useTorchLight = () => {
             .then(() => {
               setPermissionState("granted");
             })
-            .catch(() => {
+            .catch((err) => {
+              console.log("Error", err);
               setPermissionState("denied");
             });
         }
