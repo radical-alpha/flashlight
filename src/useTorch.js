@@ -14,7 +14,7 @@ export const useTorchLight = () => {
       .then((permissionStatus) => {
         console.info("permissionStatus", permissionStatus);
         let permissionState = permissionStatus.state;
-
+        setPermissionState(permissionState);
         if (permissionState === "prompt" || permissionState === "unknown") {
           navigator.mediaDevices
             .getUserMedia({
