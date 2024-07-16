@@ -5,7 +5,7 @@ function App() {
   const { isTorchAvailable, on, toggle } = useTorchLight();
   return (
     <div className="App">
-      <p>Is flassh light available : {isTorchAvailable ? "Yes" : "No"}</p>
+      <p>Is flash light available : {isTorchAvailable ? "Yes" : "No"}</p>
       <button onClick={toggle}>{on ? "Off" : "On"}</button>
     </div>
   );
