@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.qrCode {
+  width: 328px;
+  height: 328px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
